@@ -1,0 +1,27 @@
+<form class="was-validated" [formGroup]="verticalsForm" #formDir="ngForm" (ngSubmit)="onSubmit()">
+  <fieldset class="border p2">
+    <legend class="w-auto">{{btnType}} Vertical</legend>
+    <div class="row g-3">
+      <div class="col-sm-7">
+        <div class="form-group">
+          <label for="name">Name<abbr title="required" aria-label="required">*</abbr></label>
+          <input class="form-control" formControlName="name" placeholder="Vertical Name" required>
+          <div *ngIf="name.invalid && (name.dirty || name.touched)"  class="invalid-feedback">
+            <div *ngIf="name.errors.required">Name is required.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="form-group">
+          <label for="category">Category<abbr title="required" aria-label="required">*</abbr></label>
+          <select class="form-control form-select" formControlName="category" aria-label="Default select example">
+            <option *ngFor="let category of categories" [ngValue]="category">{{category}}</option>
+          </select>
+        </div>
+      </div>
+      <div *ngIf="!isModal" class="col-12 btn-align-flex-en">
+        <button type="submit" class="btn btn-primary" [disabled]="verticalsForm.invalid">{{btnType}}</button>
+      </div>
+    </div>
+  </fieldset>
+</form>

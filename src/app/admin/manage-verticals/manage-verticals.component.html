@@ -1,1 +1,4 @@
-<p>manage-verticals works!</p>
+<app-verticals-form [saveCallback]="theBoundSaveCallback" [btnType]="btnType"></app-verticals-form>
+<app-tables *ngIf="verticals.length" [dataType]="dataType"
+            [data]="verticals" [deleteCallback]="theBoundDeleteCallback"
+            [editCallback]="theBoundEditCallback"></app-tables>

@@ -1,8 +1,14 @@
-<h3>ADMIN</h3>
-<nav>
-  <a routerLink="./" routerLinkActive="active"
-     [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
-  <a routerLink="./users" routerLinkActive="active">Manage Users</a>
-  <a routerLink="./verticals" routerLinkActive="active">Manage Verticals</a>
-</nav>
-<router-outlet></router-outlet>
+<!--<nav>-->
+<!--  <a routerLink="./" routerLinkActive="active"-->
+<!--     [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>-->
+<!--  <a routerLink="./users" routerLinkActive="active">Manage Users</a>-->
+<!--  <a routerLink="./verticals" routerLinkActive="active">Manage Verticals</a>-->
+<!--</nav>-->
+<div class="container-xxl my-md-4 bd-layout">
+  <app-navbar [navElements]="navElements"></app-navbar>
+  <main class="bd-main">
+    <div class="bd-intro ps-lg-4">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

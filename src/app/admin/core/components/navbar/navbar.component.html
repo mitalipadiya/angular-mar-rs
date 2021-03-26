@@ -1,0 +1,11 @@
+<aside class="bd-sidebar">
+  <nav class="bd-links collapse" id="bd-docs-nav" aria-label="Docs navigation" style="">
+    <ul class="list-unstyled mb-0 py-3 pt-md-1">
+    <li class="mb-1" *ngFor="let item of navElements">
+      <button class="btn d-inline-flex align-items-center">
+        <a routerLink="{{item.link}}" routerLinkActive="active">{{item.name}} </a>
+      </button>
+    </li>
+  </ul>
+  </nav>
+</aside>

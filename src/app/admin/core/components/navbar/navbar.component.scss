@@ -1,0 +1,22 @@
+.bd-subnavbar {
+  position: sticky;
+  top: 0;
+}
+.bd-sidebar {
+  grid-area: sidebar;
+}
+.bd-links {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+  display: block !important;
+  height: calc(100vh - 7rem);
+  padding-left: .25rem;
+  margin-left: -.25rem;
+  overflow-y: auto;
+}
+.bd-links {
+  overflow: auto;
+  overflow-y: auto;
+  font-weight: 600;
+}

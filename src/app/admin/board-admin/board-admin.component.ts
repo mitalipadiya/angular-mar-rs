@@ -8,6 +8,11 @@ import {UserService} from '../../core/auth/user.service';
 })
 export class BoardAdminComponent implements OnInit {
   content = '';
+  navElements = [
+    { name: 'Users', link: './users' },
+    { name: 'Verticals', link: './verticals' },
+    { name: 'Geo Locations', link: './geo' }
+  ];
   constructor(private userService: UserService) { }
   ngOnInit(): void {
     this.userService.getAdminBoard().subscribe(
