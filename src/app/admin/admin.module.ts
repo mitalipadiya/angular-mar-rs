@@ -11,7 +11,6 @@ import {ConfirmationDialogComponent} from './core/components/confirmation-dialog
 import { VerticalsFormComponent } from './manage-verticals/verticals-form/verticals-form.component';
 import { ListFilterPipe } from './core/pipes/list-filter.pipe';
 import {NgbPaginationModule} from '@ng-bootstrap/ng-bootstrap';
-import { EditDialogComponent } from './core/components/edit-dialog/edit-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { EditDialogComponent } from './core/components/edit-dialog/edit-dialog.c
     TablesComponent,
     ConfirmationDialogComponent,
     VerticalsFormComponent,
-    ListFilterPipe,
-    EditDialogComponent
+    ListFilterPipe
   ],
   imports: [
     CommonModule,
